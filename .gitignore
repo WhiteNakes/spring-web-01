@@ -1,0 +1,4 @@
+# 项目排除路径
+/boot-05-admin/target/
+/boot-05-web-01/target/
+/boot-09-features-profile/target/

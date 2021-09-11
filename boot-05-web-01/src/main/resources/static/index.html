@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<h1>首页</h1>
+<a href="car/3/owner/lisi">car{id}/owner/{username}</a><br>
+<a href="car/3/owner/lisi?age=18&inters=basketball&inters=game">car/{id}/owner/{username}2</a>
+
+
+/cars/{path}?xxx=xxx&aaa=ccc queryString 查询字符串。@RequestParam；<br/>
+/cars/sell;low=34;brand=byd,audi,yd  ；矩阵变量 <br/>
+页面开发，cookie禁用了，session里面的内容怎么使用；
+session.set(a,b)---> jsessionid ---> cookie ----> 每次发请求携带。
+url重写：/abc;jsesssionid=xxxx 把cookie的值使用矩阵变量的方式进行传递.
+
+/boss/1/2
+
+/boss/1;age=20/2;age=20
+
+<a href="/cars/sell;low=34;brand=byd,audi,yd">@MatrixVariable（矩阵变量）</a>
+<a href="/cars/sell;low=34;brand=byd;brand=audi;brand=yd">@MatrixVariable（矩阵变量）</a>
+<a href="/boss/1;age=20/2;age=10">@MatrixVariable（矩阵变量）/boss/{bossId}/{empId}</a>
+<br/>
+</body>
+</html>
